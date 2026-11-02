@@ -1,0 +1,20 @@
+info:
+  name: post lab_2
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:8080/api/products
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Тестовий товар"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
